@@ -37,20 +37,32 @@ Steering Behaviours are found [here](https://github.com/Desponark/Steering-Behav
 ### Seek
 Calculates a steering force that directs an agent towards a target position.
 
+https://github.com/Desponark/Steering-Behaviours-Demo/assets/129955348/d85ac4ea-df62-409d-a65a-71dd2324b177
+
 ### Flee
 Calculates a steering force that steers an agent away from the target position.
+
+https://github.com/Desponark/Steering-Behaviours-Demo/assets/129955348/9d173773-8292-4334-a974-5206d2f0e441
 
 ### Arrive
 Calculates a steering force that decelerates an agent onto a target position.
 
+https://github.com/Desponark/Steering-Behaviours-Demo/assets/129955348/2dd9938b-79d3-484a-9631-443339ec7f16
+
 ### Pursuit
 Calculates a steering force that steers towards the predicted position of an agent.
+
+https://github.com/Desponark/Steering-Behaviours-Demo/assets/129955348/f14cceef-75ff-4152-9265-b58fcbc029fb
 
 ### Evade
 Calculates a steering force that steers away from the predicted position of an agent.
 
+https://github.com/Desponark/Steering-Behaviours-Demo/assets/129955348/c61fad42-e8a2-4d9c-ad4c-74e39e8d79f1
+
 ### Wander
 Calculates a steering force that makes an agent wander around by projecting a circle in front of it and steering towards a target position that is constrained to move along the circle perimeter.
+
+https://github.com/Desponark/Steering-Behaviours-Demo/assets/129955348/b1abbf7c-ad26-4140-8807-5a293fc2c4bf
 
 ### Obstacle Avoidance
 Calculates a steering force that steers an agent to avoid obstacles lying in its path.
@@ -74,6 +86,8 @@ Calculates a steering force that moves an agent along a series of positions
 
 ### Offset Pursuit
 Calculates a steering force required to keep an agent at a specified offset from a target agent.
+
+https://github.com/Desponark/Steering-Behaviours-Demo/assets/129955348/27fcd2ed-cb6c-426e-b312-da65cb4f21d2
 
 ## Group Behaviours
 Group Behaviours are found [here](https://github.com/Desponark/Steering-Behaviours-Demo/tree/master/Scripts/Steering/SteeringBehaviour/GroupBehaviours).
