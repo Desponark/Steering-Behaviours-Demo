@@ -32,7 +32,7 @@ layers:
  	- ![image](https://github.com/Desponark/Steering-Behaviours-Demo/assets/129955348/06999ff3-117e-42f0-b37f-005bd4af729c)
 
 ## Steering Behaviours
-The Steering Behaviours are found [here](https://github.com/Desponark/Steering-Behaviours-Demo/tree/master/Scripts/Steering/SteeringBehaviour/Behaviours)
+Steering Behaviours are found [here](https://github.com/Desponark/Steering-Behaviours-Demo/tree/master/Scripts/Steering/SteeringBehaviour/Behaviours)
 
 ### Seek
 Calculates a steering force that directs an agent towards a target position.
@@ -76,7 +76,8 @@ Calculates a steering force that moves an agent along a series of positions
 Calculates a steering force required to keep an agent at a specified offset from a target agent.
 
 ## Group Behaviours
-The Group Behaviours are found [here](https://github.com/Desponark/Steering-Behaviours-Demo/tree/master/Scripts/Steering/SteeringBehaviour/GroupBehaviours)
+Group Behaviours are found [here](https://github.com/Desponark/Steering-Behaviours-Demo/tree/master/Scripts/Steering/SteeringBehaviour/GroupBehaviours).
+Group Behaviours are special as they take into consideration the other agents in the game.
 
 ### Separation
 Calculates a steering force that keeps an agents heading (look direction) aligned with its neighbors
