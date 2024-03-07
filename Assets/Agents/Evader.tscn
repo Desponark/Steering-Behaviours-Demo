@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=3 uid="uid://da281wt7asvfl"]
+
+[ext_resource type="Script" path="res://Scripts/Vehicle.cs" id="1_6k3cw"]
+[ext_resource type="Script" path="res://Scripts/ActionSelection/ActionSelection.cs" id="2_y6gfs"]
+[ext_resource type="Script" path="res://Scripts/Steering/Steering.cs" id="3_qsnw2"]
+[ext_resource type="Script" path="res://Scripts/Steering/SteeringBehaviour/Behaviours/Evade.cs" id="4_1bs6k"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_n7ev1"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ee7g1"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0la74"]
+size = Vector3(0.2, 0.2, 0.5)
+
+[node name="Evader" type="CharacterBody3D" node_paths=PackedStringArray("Steering")]
+script = ExtResource("1_6k3cw")
+Steering = NodePath("Steering")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_n7ev1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_ee7g1")
+
+[node name="Nose" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, -0.677053)
+mesh = SubResource("BoxMesh_0la74")
+
+[node name="ActionSelection" type="Node" parent="." node_paths=PackedStringArray("Vehicle")]
+script = ExtResource("2_y6gfs")
+Vehicle = NodePath("..")
+
+[node name="Steering" type="Node" parent="." node_paths=PackedStringArray("Vehicle", "ActionSelection")]
+script = ExtResource("3_qsnw2")
+Vehicle = NodePath("..")
+ActionSelection = NodePath("../ActionSelection")
+
+[node name="Evade" type="Node" parent="Steering"]
+script = ExtResource("4_1bs6k")
