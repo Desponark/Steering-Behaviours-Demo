@@ -6,6 +6,9 @@ It also serves the purpose of a testbed for a private godot project I'm working 
 
 **Currently still work in Progress.**
 
+## Engine / Language
+- Godot 4.1 Mono / C#
+
 ## Theory behind it
 > The movement of an autonomous agent can be broken down into three
 layers:
@@ -104,9 +107,6 @@ Calculates a steering force that directs an agent away from neighbouring agents
 ### Cohesion
 Calculates a steering force that directs an agent toward the center of mass of its neighbours
 - Not yet Implemented
-
-## Engine / Language
-- Godot 4.1 Mono / C#
 
 ## Note
 - All quotes are from the book _"Programming Game AI by Example by Mat Buckland"_ and mostly from chapter 3 _"How to Create Autonomously Moving Game Agents"_.
