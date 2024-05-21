@@ -4,8 +4,6 @@ This is intended as a little demonstration (and experimentation) of the differen
 
 It also serves the purpose of a testbed for a private godot project I'm working on with a friend.
 
-**Currently still work in Progress.**
-
 ## Engine / Language
 - Godot 4.1 Mono / C#
 
@@ -31,7 +29,8 @@ layers:
   For example, if you had implemented the mechanics of a camel, a tank, and a goldfish and then gave a command for them to travel north, they would all use different mechanical processes to create motion even though their intent (to move north) is identical.
   By separating this layer from the steering layer, it’s possible to utilize, with little modification, the same steering behaviors for completely different types of locomotion.
 
-	- This [class](https://github.com/Desponark/Steering-Behaviours-Demo/blob/master/Scripts/Vehicle.cs) serves as the locomotion and where the resulting Steering Force is consumed by Godot's MoveAndSlide() function.
+	- **There is currently a mistake with how the steering force is added to the velocity. Instead of adding to the velocity every frame it gets set to the velocity**
+  	- This [class](https://github.com/Desponark/Steering-Behaviours-Demo/blob/master/Scripts/Vehicle.cs) serves as the locomotion and where the resulting Steering Force is consumed by Godot's MoveAndSlide() function.
  	- ![image](https://github.com/Desponark/Steering-Behaviours-Demo/assets/129955348/06999ff3-117e-42f0-b37f-005bd4af729c)
 
 ## Steering Behaviours
