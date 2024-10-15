@@ -4,6 +4,8 @@ This is intended as a little demonstration (and experimentation) of the differen
 
 It also serves the purpose of a testbed for a private godot project I'm working on with a friend.
 
+**An improved version of my Steering Behaviours (combined with a Finite-State Machine) can be found here: https://github.com/Desponark/SimpleAI**
+
 ## Engine / Language
 - Godot 4.1 Mono / C#
 
